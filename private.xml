@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>OFFICE_DELL_KEYBOARD_VENDORID</vendorname>
+    <vendorid>0x413c</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>OFFICE_DELL_KEYBOARD_PRODUCTID</productname>
+    <productid>0x2107</productid>
+  </deviceproductdef>
+
+  <devicevendordef>
+    <vendorname>MAC_INTERNAL_KEYBOARD_VENDORID</vendorname>
+    <vendorid>0x05ac</vendorid>
+  </devicevendordef>
+
+  <deviceproductdef>
+    <productname>MAC_INTERNAL_KEYBOARD_PRODUCTID</productname>
+    <productid>0x0259</productid>
+  </deviceproductdef>
+
+  <item>
+    <name>MY CHERRY G80-3000 KEYBOARD</name>
+    <identifier>private.my_cherry_keyboard_swap_menu2rightcontrol_rightcontrol2fn</identifier>
+    <only>EMACS</only>
+    <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::CONTROL_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::CONTROL_R, KeyCode::FN</autogen>
+  </item>
+
+  <item>
+    <name>EMACS KEY MAP OF MAC KEYBOARD</name>
+    <identifier>private.mac_keyboard_swap_control2option_option2command_command2control</identifier>
+    <only>EMACS</only>
+    <device_only>DeviceVendor::MAC_INTERNAL_KEYBOARD_VENDORID, DeviceProduct::MAC_INTERNAL_KEYBOARD_PRODUCTID</device_only>
+    <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::OPTION_R</autogen>
+
+    <autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::CONTROL_R</autogen>
+
+    <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::CONTROL_R, KeyCode::COMMAND_R</autogen>
+  </item>
+  
+  <item>
+    <name>EMACS KEY MAP OF OFFICE DELL KEYBOARD</name>
+    <identifier>private.office_dell_keyboard_swap_menu2rightcontrol_rightcontrol2fn</identifier>
+    <only>EMACS</only>
+    <device_only>DeviceVendor::OFFICE_DELL_KEYBOARD_VENDORID, DeviceProduct::OFFICE_DELL_KEYBOARD_PRODUCTID</device_only>
+    <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::CONTROL_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::CONTROL_R, KeyCode::FN</autogen>
+  </item>
+</root>
